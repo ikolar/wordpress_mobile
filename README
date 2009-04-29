@@ -1,0 +1,28 @@
+wordpress_mobile
+
+I read a lot of blogs, but mostly from my PDA (iPhone touch or Nokia E71). Most blogs still aren't mobile friendly, meaning:
+ - their feature RSS, but only with headlines, not full articles;
+ - their main page is bloated with ads, menus and such, and/or sufferes chronical divitis;
+ - they use flash excessively, oftentimes in places where it could have been avoided. The sad truth here is that the touch can play many many flv/h.264 videos, but not if wrappen in a silly flash player.
+ - etc.
+
+This is one of the tools I use to make reading these blogs easier.
+
+Inside index.php, you will find some CSS and a passthru() commands that pipes 
+the blogs index/post/.. page to some simple sed commands. Sed will take out
+the header, footer, navigation and such, and print the jucy stuff in the
+middle, with some mobile sugar.
+
+An extra clean.sed is meant for site-specific stuff. You wouldn't believe
+the non-standardness of wordpress blogs's html markup.
+
+The php script also adds some navigation.
+
+It's all very simple, really.
+
+Deployed at http://www.kiberpipa.org/~ike/m and perhaps elsewhere.
+
+Quesions and such to igor.kolar@gmail.com .
+
+Licensed under GNU GPL v3.
+-i
